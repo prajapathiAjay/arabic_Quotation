@@ -53,6 +53,63 @@ const template = `
     /* white-space: nowrap; */
     text-align:justify
 }
+
+
+
+.stepCard {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    direction: rtl;
+}
+
+.stepIcon {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.stepContent {
+    flex: 1;
+}
+
+.stepTitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #111;
+}
+
+.stepText {
+    font-size: 24px;
+    line-height: 2.2;
+    color: #444;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .stepCard {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .stepIcon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .stepTitle {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .stepText {
+        font-size: 18px;
+        line-height: 1.9;
+    }
+}
 /* //////////////////////////////////////// */
 
         .fullWidth {
@@ -1652,7 +1709,8 @@ const template = `
                             " alt="">
                     </div>
                     <div class="rtl"
-                        style="width: 90%; display: inline-flex; justify-content: start; align-items: start; gap: 5rem;">
+                        style="width: 90%; display: inline-flex; justify-content: start; align-items: start; gap: 5rem;"
+                        >
                         <img src="https://balloons-dezen.s3.ap-south-1.amazonaws.com/d5123d40-f5db-11ef-81d9-332d9815c9b0-paperPenAwn.png"
                             style="
                                 width: 100px;
